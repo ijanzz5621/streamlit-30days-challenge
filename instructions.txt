@@ -1,0 +1,4 @@
+run the script:
+==============
+
+poetry run streamlit run scripts/<filename.py>
