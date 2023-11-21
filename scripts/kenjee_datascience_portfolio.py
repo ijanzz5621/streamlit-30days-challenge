@@ -26,11 +26,12 @@ df_time = pd.read_csv('files/Video_Performance_Over_Time.csv')
 df_time['Date'] = pd.to_datetime(df_time['Date'], format='%d %b %Y')
 
 # test show data
-#st.dataframe(df_agg, use_container_width=True, hide_index=True)
-#st.dataframe(df_agg_sub, use_container_width=True, hide_index=True)
-#st.dataframe(df_comments, use_container_width=True, hide_index=True)
-#st.dataframe(df_time, use_container_width=True, hide_index=True)
+st.dataframe(df_agg, use_container_width=True, hide_index=True)
+st.dataframe(df_agg_sub, use_container_width=True, hide_index=True)
+st.dataframe(df_comments, use_container_width=True, hide_index=True)
+st.dataframe(df_time, use_container_width=True, hide_index=True)
 
+# massage the data
 
 
 

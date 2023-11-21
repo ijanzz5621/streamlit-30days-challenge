@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "30dayschallenge"
+name = "streamlit-30days-challenge"
 version = "1.0.0"
 description = "Streamlit learning"
 authors = ["Sharizan"]
