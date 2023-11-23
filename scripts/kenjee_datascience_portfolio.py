@@ -64,15 +64,18 @@ elif add_sidebar == 'Aggregate Metrics':
     
     count = 0
     
-    st.write(df_agg_metrics[df_agg_metrics['Video publish time'] >= metric_date_12mo].iloc[1:,:].median())
-    
+    # drop date value
+    metric_medians6mo.drop(index=metric_medians6mo.index[0], axis=0, inplace=True)
+    metric_medians12mo.drop(index=metric_medians12mo.index[0], axis=0, inplace=True)
+        
+    #st.write(df_agg_metrics[df_agg_metrics['Video publish time'] >= metric_date_12mo].iloc[1:,:].median())    
     #st.write(df_agg_metrics['Video publish time'].max())
     
     for i in metric_medians6mo.index:
         with columns[count]:
-            #delta = (metric_medians6mo[i] - metric_medians12mo[i])/metric_medians12mo[i]
-            st.write(metric_medians6mo[i])
-            #st.metric(label = i, value = round(metric_medians6mo[i], 1), delta = '{:.25}'.format(delta))
+            delta = (metric_medians6mo[i] - metric_medians12mo[i])/metric_medians12mo[i]
+            #st.write(metric_medians6mo[i])
+            st.metric(label = i, value = round(metric_medians6mo[i], 1), delta = '{:.25}'.format(delta))
             
             count += 1
             if count >= 5:
