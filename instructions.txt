@@ -2,3 +2,14 @@ run the script:
 ==============
 
 poetry run streamlit run scripts/<filename.py>
+
+list of icons:
+=============
+
+https://share.streamlit.io/streamlit/emoji-shortcodes
+
+LaTeX expression:
+================
+
+https://katex.org/docs/supported.html
+
