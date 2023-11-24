@@ -13,3 +13,11 @@ LaTeX expression:
 
 https://katex.org/docs/supported.html
 
+Deploy to docker:
+=================
+
+https://docs.streamlit.io/knowledge-base/tutorials/deploy/docker
+
+
+
+
