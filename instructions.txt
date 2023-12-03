@@ -18,6 +18,11 @@ Deploy to docker:
 
 https://docs.streamlit.io/knowledge-base/tutorials/deploy/docker
 
+Streamlit configurations:
+========================
+
+https://docs.streamlit.io/library/advanced-features/configuration#set-configuration-options
+
 
 
 
